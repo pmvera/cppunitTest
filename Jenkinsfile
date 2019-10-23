@@ -10,7 +10,7 @@ pipeline {
           mkdir -p build
           cd build
           cmake .. -DUSEXUNIT=ON
-          Make -j4
+          make -j4
           ./test/aritTest
           '''
 		}
